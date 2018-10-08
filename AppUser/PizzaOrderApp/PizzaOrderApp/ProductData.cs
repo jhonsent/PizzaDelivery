@@ -12,8 +12,11 @@ using Android.Widget;
 
 namespace PizzaOrderApp
 {
+
     public static class ProductData
     {
+
+
         public static List<Product> Products { get; private set; }
 
         static ProductData()
@@ -24,10 +27,13 @@ namespace PizzaOrderApp
            
 
             Products = temp.OrderBy(i => i.Name).ToList();
+
+
         }
 
         static void AddProduct(List<Product> Products)
         {
+
 
             Products.Add(new Product()
             {
@@ -62,5 +68,6 @@ namespace PizzaOrderApp
 
             
         }
+        
     }
 }

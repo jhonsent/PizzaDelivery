@@ -17,13 +17,13 @@ namespace PizzaOrderApp
             // Set our view from the "main" layout resource
             SetContentView(Resource.Layout.Main);
 
-            int count=0;
+   
 
             Button btnMenu = FindViewById<Button>(Resource.Id.btnMenu);
             
             btnMenu.Click += delegate 
             {
-                btnMenu.Text = string.Format("{0} clicks!", count++);
+                //btnMenu.Text = string.Format("{0} clicks!", count++);
                 StartActivity(typeof(Menu));
             };
         }

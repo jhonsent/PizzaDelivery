@@ -42,10 +42,13 @@ namespace PizzaOrderApp
             return position;
         }
 
+
+
         public override View GetView(int position, View convertView, ViewGroup parent)
         {
+            
             var view = convertView;
-
+            
             if (view == null)
             {
                 view = LayoutInflater.From(parent.Context).Inflate(Resource.Layout.productRow, parent, false);
@@ -54,6 +57,8 @@ namespace PizzaOrderApp
                 var name = view.FindViewById<TextView>(Resource.Id.nameTextView);
                 var price = view.FindViewById<TextView>(Resource.Id.priceTextView);
 
+
+                
 
                 view.Tag = new ViewHolder() { Photo = photo, Name = name, Price = price };
             }
@@ -66,8 +71,11 @@ namespace PizzaOrderApp
 
 
             return view;
+            
 
         }
+
+ 
     }
 
     class MyProductListAdapterViewHolder : Java.Lang.Object

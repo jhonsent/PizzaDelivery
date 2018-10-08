@@ -25,6 +25,8 @@ namespace PizzaOrderApp
             //myList.Adapter = new MyCustomListAdapter(UserData.Users);
 
             myList.Adapter = new MyProductListAdapter(ProductData.Products);
+
         }
+        
     }
 }
