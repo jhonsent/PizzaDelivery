@@ -6,28 +6,39 @@
     android:minWidth="25px"
     android:minHeight="25px"
     android:paddingBottom="4dp">
+    <ImageView
+        android:id="@+id/photoImageView"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:padding="5dp" />
+    <TextView
+        android:id="@+id/nameTextView"
+        android:layout_toRightOf="@id/photoImageView"
+        android:text="Product"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="5dp" />
+    <TextView
+        android:id="@+id/priceTextView"
+        android:layout_toRightOf="@id/photoImageView"
+        android:layout_below="@id/nameTextView"
+        android:text="Price"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="5dp" />
+
   <ImageView
-      android:id="@+id/photoImageView"
-      android:layout_width="60dp"
-      android:layout_height="60dp"
-      android:layout_alignParentLeft="true"
-      android:layout_centerVertical="true"
-      android:padding="5dp" />
-  <TextView
-      android:id="@+id/nameTextView"
-      android:layout_toRightOf="@id/photoImageView"
-      android:text="Product"
-      android:textAppearance="?android:attr/textAppearanceLarge"
-      android:layout_width="wrap_content"
-      android:layout_height="wrap_content"
-      android:paddingLeft="5dp" />
-  <TextView
-      android:id="@+id/priceTextView"
-      android:layout_toRightOf="@id/photoImageView"
-      android:layout_below="@id/nameTextView"
-      android:text="Price"
-      android:textAppearance="?android:attr/textAppearanceSmall"
-      android:layout_width="wrap_content"
-      android:layout_height="wrap_content"
-      android:paddingLeft="5dp" />
+        android:id="@+id/addToCart"
+        android:src="@drawable/addtocart"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:padding="5dp" />
+  
+  
 </RelativeLayout>
