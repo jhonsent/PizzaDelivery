@@ -16,6 +16,9 @@ namespace PizzaOrderApp
     {
         public ImageView Photo { get; set; }
         public TextView Name { get; set; }
-        public TextView Department { get; set; }
+        //public TextView Department { get; set; }
+
+        //public TextView Product { get; set; }
+        public TextView Price { get; set; }
     }
 }

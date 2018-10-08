@@ -12,20 +12,20 @@ using Android.Widget;
 
 namespace PizzaOrderApp
 {
-    public class MyCustomListAdapter : BaseAdapter<User>
+    public class MyProductListAdapter : BaseAdapter<Product>
     {
-        List<User> users;
+        List<Product> Products;
 
-        public MyCustomListAdapter(List<User> users)
+        public MyProductListAdapter(List<Product> Products)
         {
-            this.users = users;
+            this.Products = Products;
         }
 
-        public override User this[int position]
+        public override Product this[int position]
         {
             get
             {
-                return users[position];
+                return Products[position];
             }
         }
 
@@ -33,7 +33,7 @@ namespace PizzaOrderApp
         {
             get
             {
-                return users.Count;
+                return Products.Count;
             }
         }
 
@@ -48,20 +48,21 @@ namespace PizzaOrderApp
 
             if (view == null)
             {
-                view = LayoutInflater.From(parent.Context).Inflate(Resource.Layout.userRow, parent, false);
-                    
+                view = LayoutInflater.From(parent.Context).Inflate(Resource.Layout.productRow, parent, false);
+
                 var photo = view.FindViewById<ImageView>(Resource.Id.photoImageView);
                 var name = view.FindViewById<TextView>(Resource.Id.nameTextView);
-                var department = view.FindViewById<TextView>(Resource.Id.departmentTextView);
+                var price = view.FindViewById<TextView>(Resource.Id.priceTextView);
 
-                view.Tag = new ViewHolder() { Photo = photo, Name = name, Department = department };
+
+                view.Tag = new ViewHolder() { Photo = photo, Name = name, Price = price };
             }
 
             var holder = (ViewHolder)view.Tag;
 
-            holder.Photo.SetImageDrawable(ImageManager.Get(parent.Context, users[position].ImageUrl));
-            holder.Name.Text = users[position].Name;
-            holder.Department.Text = users[position].Department;
+            holder.Photo.SetImageDrawable(ImageManager.Get(parent.Context, Products[position].ImageUrl));
+            holder.Name.Text = Products[position].Name;
+            holder.Price.Text = Products[position].Price;
 
 
             return view;
@@ -69,7 +70,7 @@ namespace PizzaOrderApp
         }
     }
 
-    class MyCustomListAdapterViewHolder : Java.Lang.Object
+    class MyProductListAdapterViewHolder : Java.Lang.Object
     {
         //Your adapter views to re-use
         //public TextView Title { get; set; }

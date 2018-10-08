@@ -22,7 +22,9 @@ namespace PizzaOrderApp
             SetContentView(Resource.Layout.Menu);
 
             myList = FindViewById<ListView>(Resource.Id.listPizza);
-            myList.Adapter = new MyCustomListAdapter(UserData.Users);
+            //myList.Adapter = new MyCustomListAdapter(UserData.Users);
+
+            myList.Adapter = new MyProductListAdapter(ProductData.Products);
         }
     }
 }

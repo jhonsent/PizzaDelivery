@@ -57,11 +57,11 @@
     <Compile Include="ImageManager.cs" />
     <Compile Include="MainActivity.cs" />
     <Compile Include="Menu.cs" />
-    <Compile Include="MyCustomListAdapter.cs" />
+    <Compile Include="MyProductListAdapter.cs" />
+    <Compile Include="Product.cs" />
+    <Compile Include="ProductData.cs" />
     <Compile Include="Resources\Resource.Designer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="User.cs" />
-    <Compile Include="UserData.cs" />
     <Compile Include="ViewHolder.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -72,7 +72,7 @@
     <AndroidResource Include="Resources\layout\Menu.axml">
       <SubType>Designer</SubType>
     </AndroidResource>
-    <AndroidResource Include="Resources\layout\userRow.axml">
+    <AndroidResource Include="Resources\layout\productRow.axml">
       <SubType>Designer</SubType>
     </AndroidResource>
   </ItemGroup>
@@ -91,6 +91,10 @@
   </ItemGroup>
   <ItemGroup>
     <AndroidAsset Include="Assets\images\image.png" />
+    <AndroidAsset Include="Assets\images\SUPREME.png" />
+    <AndroidAsset Include="Assets\images\HAWAIIAN.png" />
+    <AndroidAsset Include="Assets\images\ITALIAN.png" />
+    <AndroidAsset Include="Assets\images\MEAT.png" />
     <Content Include="pizza.jpg" />
     <AndroidResource Include="Resources\drawable\pizza.jpg" />
   </ItemGroup>

@@ -12,16 +12,16 @@ using Android.Widget;
 
 namespace PizzaOrderApp
 {
-    public class User
+    public class Product
     {
         public string Name { get; set; }
         public string ImageUrl { get; set; }
-        public string Department { get; set; }
+        public string Price { get; set; }
         public string Details { get; set; }
 
         public override string ToString()
         {
-            return Name + " " + Department;
+            return Name + " " + Price;
         }
     }
 }

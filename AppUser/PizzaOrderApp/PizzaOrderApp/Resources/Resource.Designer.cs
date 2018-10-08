@@ -63,9 +63,6 @@ namespace PizzaOrderApp
 			// aapt resource value: 0x7f050000
 			public const int btnMenu = 2131034112;
 			
-			// aapt resource value: 0x7f050004
-			public const int departmentTextView = 2131034116;
-			
 			// aapt resource value: 0x7f050001
 			public const int listPizza = 2131034113;
 			
@@ -74,6 +71,9 @@ namespace PizzaOrderApp
 			
 			// aapt resource value: 0x7f050002
 			public const int photoImageView = 2131034114;
+			
+			// aapt resource value: 0x7f050004
+			public const int priceTextView = 2131034116;
 			
 			static Id()
 			{
@@ -95,7 +95,7 @@ namespace PizzaOrderApp
 			public const int Menu = 2130903041;
 			
 			// aapt resource value: 0x7f030002
-			public const int userRow = 2130903042;
+			public const int productRow = 2130903042;
 			
 			static Layout()
 			{
